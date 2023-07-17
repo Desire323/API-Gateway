@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  api-gateway:
+    build: ./
+    image: api-gateway
+    container_name: api-gateway
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+      SPRING_APPLICATION_NAME: api-gateway
+      SERVICE_REGISTRY_URL: http://service-registry:8761/eureka
+    ports:
+      - "8000:8080"
+    networks:
+      - desire
+
+networks:
+  desire:
+    external: true
