@@ -1,4 +1,4 @@
-package com.example.apigateway;
+package com.desire323.apigateway;
 
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;

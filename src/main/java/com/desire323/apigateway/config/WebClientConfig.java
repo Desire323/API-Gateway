@@ -1,4 +1,4 @@
-package com.example.apigateway.config;
+package com.desire323.apigateway.config;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;

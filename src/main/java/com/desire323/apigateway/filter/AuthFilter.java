@@ -1,7 +1,7 @@
-package com.example.apigateway.filter;
+package com.desire323.apigateway.filter;
 
-import com.example.apigateway.DTO.Token;
-import com.example.apigateway.DTO.ValidationDTO;
+import com.desire323.apigateway.DTO.ValidationDTO;
+import com.desire323.apigateway.DTO.Token;
 import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFactory;
 import org.springframework.http.HttpHeaders;

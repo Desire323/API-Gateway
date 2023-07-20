@@ -1,4 +1,4 @@
-package com.example.apigateway.DTO;
+package com.desire323.apigateway.DTO;
 
 public class ValidationDTO {
     private int id;
