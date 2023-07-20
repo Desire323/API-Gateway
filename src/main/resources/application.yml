@@ -25,3 +25,9 @@ spring:
             - Path=/user/**
           filters:
               - AuthFilter
+        - id: fortunes-service
+          uri: lb://FORTUNES-SERVICE
+          predicates:
+            - Path=/fortune/**
+          filters:
+              - AuthFilter
