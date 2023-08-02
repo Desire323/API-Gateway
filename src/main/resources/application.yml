@@ -29,6 +29,18 @@ spring:
             - Path=/fortune/**
           filters:
               - AuthFilter
+        - id: friends-service-persons
+          uri: lb://FRIENDS-SERVICE
+          predicates:
+            - Path=/persons/**
+          filters:
+              - AuthFilter
+        - id: friends-service-posts
+          uri: lb://FRIENDS-SERVICE
+          predicates:
+            - Path=/posts/**
+          filters:
+              - AuthFilter
         - id: chat-service-rest
           uri: lb://CHAT-SERVICE
           predicates:
