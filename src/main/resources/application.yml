@@ -17,8 +17,6 @@ spring:
           uri: lb://AUTHENTICATION-SERVICE
           predicates:
             - Path=/auth/**
-#          filters:
-#            - AuthenticationFilter
         - id: user-service
           uri: lb://USER-SERVICE
           predicates:
@@ -31,3 +29,13 @@ spring:
             - Path=/fortune/**
           filters:
               - AuthFilter
+        - id: chat-service-rest
+          uri: lb://CHAT-SERVICE
+          predicates:
+            - Path=/chat-utils/**
+          filters:
+            - AuthFilter
+        - id: chat-service-websocket
+          uri: lb:ws://CHAT-SERVICE
+          predicates:
+            - Path=/ws/**
